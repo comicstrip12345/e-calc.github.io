@@ -1,0 +1,165 @@
+body {
+  background-color: black;
+}
+
+nav {
+  height: 10vh;
+}
+
+nav .container a {
+  font-family: Orbitron;
+  color: white;
+  text-decoration: none;
+}
+
+.container .row .title h1 {
+  font-family: Orbitron;
+  color: white;
+  font-size: 15vh;
+  margin-top: 14vh;
+}
+
+.container .row .title p {
+  color: white;
+  font-weight: lighter;
+}
+
+.container .row .calculator {
+  width: 40vh;
+  height: 70vh;
+  border: 1px solid white;
+  margin: 2vh;
+  border-radius: 20px;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-top: 7vh;
+}
+
+.container .row .calculator .screen {
+  margin-bottom: 2vh;
+  height: 15vh;
+  background-color: black;
+  position: relative;
+  padding: 0;
+}
+
+.container .row .calculator .screen input[type=text] {
+  font-size: 5vh;
+  width: 100%;
+  background-color: black;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  color: white;
+}
+
+.container .row .calculator .screen input[type=text]:focus {
+  outline: none;
+}
+
+.container .row .calculator .screen p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+
+.container .row .calculator .buttons {
+  padding: 0.5vh;
+}
+
+.container .row .calculator .buttons button {
+  width: 100%;
+  height: 7.5vh;
+  border: none;
+  border-radius: 4vh;
+  font-size: 2.7vh;
+}
+
+.container .row .calculator .buttons button.numbers {
+  background-color: #313131;
+  color: white;
+}
+
+.container .row .calculator .buttons button.numbers:hover {
+  background-color: #202020;
+}
+
+.container .row .calculator .buttons button.operators {
+  background-color: #F69906;
+  color: white;
+  font-size: 3vh;
+}
+
+.container .row .calculator .buttons button.operators:hover {
+  background-color: #cf8104;
+}
+
+.container .row .calculator .buttons button.signs {
+  background-color: #a0a0a0;
+}
+
+.container .row .calculator .buttons button.signs:hover {
+  background-color: #7e7c7c;
+}
+
+footer .container .footer {
+  width: 50vh;
+  padding-top: 10vh;
+}
+
+footer .container .footer p {
+  color: white;
+  font-family: Orbitron;
+  font-size: 1.5vh;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 575px) {
+  nav .container a {
+    font-size: 3vh;
+  }
+  .container .row .title h1 {
+    font-size: 10vh;
+    margin-top: 6vh;
+  }
+  .container .row .title input[type=text] {
+    font-size: 2vh;
+  }
+  .container .row .calculator {
+    margin-top: 7vh;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  nav .container a {
+    font-size: 3vh;
+  }
+  .container .row .title h1 {
+    font-size: 16vh;
+    margin-top: 6vh;
+  }
+  .container .row .title input[type=text] {
+    font-size: 2vh;
+  }
+  .container .row .calculator {
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  nav .container a {
+    font-size: 3vh;
+  }
+  .container .row .title h1 {
+    font-size: 16vh;
+    margin-top: 6vh;
+  }
+  .container .row .title input[type=text] {
+    font-size: 2vh;
+  }
+  .container .row .calculator {
+    margin-top: 10vh;
+  }
+}

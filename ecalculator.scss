@@ -1,0 +1,222 @@
+$bgcolorbtn_calc: #313131;
+$textcolorbtn_calc: white;
+$bgcolorbtnopr_calc:#F69906; 
+$bgcolorbtnsign_cal:#a0a0a0;
+$title_color: white;
+$title_content_color: white;
+
+$bgcolor: black;
+$scrncolor_calc: black;
+$scrntxtcolor_calc: white;
+
+
+
+body{
+    background-color: $bgcolor;
+}
+
+nav{
+    height: 10vh;
+    .container{
+        a{
+            font-family: Orbitron; 
+            color: white; 
+            text-decoration: none;
+        }
+    }
+}
+
+.container{
+    .row{
+        .title{
+            h1{
+                font-family: Orbitron; 
+                color: $title_color; 
+                font-size: 15vh;
+                margin-top: 14vh;
+            }
+            p{
+                color: $title_content_color;
+                font-weight: lighter;
+            }
+        }
+        .calculator{
+            width: 40vh; 
+            height: 70vh; 
+            border: 1px solid white; 
+            margin: 2vh;
+            border-radius: 20px;
+            padding-left: 5vh;
+            padding-right: 5vh;
+            padding-top: 7vh;
+
+            .screen{
+                margin-bottom: 2vh;
+                height: 15vh;
+                background-color: $scrncolor_calc;
+                position: relative;
+                padding: 0;
+
+                input[type=text]{
+                    font-size: 5vh;
+                    width: 100%;
+                    background-color: $scrncolor_calc;
+                    border: none;
+                    position: absolute;
+                    bottom: 0;
+                    text-align: right;
+                    color: $scrntxtcolor_calc;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                p{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    text-align: right;
+                }
+            }
+            .buttons{
+                padding: 0.5vh;
+
+                button{
+                    width: 100%; 
+                    height: 7.5vh;
+                    border: none;
+                    border-radius: 4vh;
+                    font-size: 2.7vh;
+                }
+                button.numbers{
+                    background-color: $bgcolorbtn_calc;
+                    color: $textcolorbtn_calc;
+                    &:hover{
+                        background-color: #202020;
+                    }
+                }
+                button.operators{
+                    background-color: $bgcolorbtnopr_calc;
+                    color: $textcolorbtn_calc;
+                    font-size: 3vh;
+                    &:hover{
+                        background-color: #cf8104;
+                    }
+                }
+                button.signs{
+                    background-color: $bgcolorbtnsign_cal;
+                    &:hover{
+                        background-color: #7e7c7c;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    .container{
+        .footer{
+            width: 50vh; 
+            padding-top: 10vh;
+
+            p{
+                color: white; 
+                font-family: Orbitron; 
+                font-size: 1.5vh; 
+                font-weight: lighter;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:575px){
+    nav{
+        .container{
+            a{
+                font-size: 3vh;
+            }
+        }
+    }
+    .container{
+        .row{
+            .title{
+                
+                h1{
+                    font-size: 10vh;
+                    margin-top: 6vh;
+                }
+                input[type=text]{
+                    font-size: 2vh;
+                }
+            }
+            .calculator{
+                margin-top: 7vh;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px){
+    nav{
+        .container{
+            a{
+                font-size: 3vh;
+            }
+        }
+    }
+    .container{
+        .row{
+            .title{
+                
+                h1{
+                    font-size: 16vh;
+                    margin-top: 6vh;
+                }
+                input[type=text]{
+                    font-size: 2vh;
+                }
+            }
+            .calculator{
+                margin-top: 10vh;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    nav{
+        .container{
+            a{
+                font-size: 3vh;
+            }
+        }
+    }
+    .container{
+        .row{
+            .title{
+                
+                h1{
+                    font-size: 16vh;
+                    margin-top: 6vh;
+                }
+                input[type=text]{
+                    font-size: 2vh;
+                }
+            }
+            .calculator{
+                margin-top: 10vh;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+
+}
+
+@media screen and (min-width:1200px){
+
+}
+
